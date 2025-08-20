@@ -1,0 +1,157 @@
+:root {
+  --primary: #e25822;
+  --secondary: #ffcc80;
+  --bg: #fff8f3;
+  --nav-bg: #fff;
+  --accent: #222;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-bg);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--accent);
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--secondary);
+}
+header h1 {
+  margin-bottom: 0.7rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.menu-section h2,
+.cart-section h2 {
+  margin-bottom: 1rem;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.menu-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow);
+  flex: 1 1 230px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-card img {
+  border-radius: 0.4rem;
+  width: 170px;
+  height: 110px;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
+.menu-card h3 {
+  margin: 0.5rem 0;
+}
+.menu-card .price {
+  color: var(--primary);
+  font-weight: 600;
+}
+.menu-card button {
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.cart-section {
+  margin-top: 2rem;
+}
+#cart-items {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--nav-bg);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 1rem 0 0 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  main {
+    padding: 0 0.3rem;
+  }
+}

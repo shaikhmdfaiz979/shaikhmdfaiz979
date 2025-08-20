@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>DelishDeliver | Food Delivery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Fz979Deliver</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li>
+          <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+    <header>
+      <h1>Your Favorite Food, Delivered Fast</h1>
+      <p>Browse the menu, order, and enjoy.</p>
+    </header>
+    <main>
+      <section class="menu-section">
+        <h2>Featured Dishes</h2>
+        <div class="menu-items" id="menu-items">
+          <!-- Menu items injected by JS -->
+        </div>
+      </section>
+      <section class="cart-section" id="cart-section" style="display: none">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-btn">Checkout</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Fz979Deliver. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
