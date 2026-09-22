@@ -1,4 +1,4 @@
-[9/22/26 4:00 PM] Md Faiz Shaikh: <h1 align="center">Hi 👋, I'm Md Faiz</h1>
+<h1 align="center">Hi 👋, I'm Md Faiz</h1>
 
 <h3 align="center">Aspiring Cloud & DevOps Engineer | Linux | AWS | Docker | CI/CD</h3>
 
@@ -106,7 +106,7 @@ GitHub → GitHub Actions → Docker → Amazon ECR → ECS/Fargate → ALB
 - Application deployed on ECS/Fargate
 - Application Load Balancer used for traffic routing
 - Practiced ECS, target-group and health-check troubleshooting
-[9/22/26 4:00 PM] Md Faiz Shaikh: #### 🔹 Secure S3 + CloudFront Website
+- Secure S3 + CloudFront Website
 
 S3 → CloudFront → Origin Access Control (OAC)
 
@@ -156,7 +156,7 @@ S3 → CloudFront → Origin Access Control (OAC)
 - [x] GitHub Actions CI/CD
 - [x] S3 + CloudFront + OAC
 - [ ] Terraform
-- [ ] Kubernetes
+- [x] Kubernetes
 - [ ] Advanced AWS
 - [ ] AWS/DevOps certification
 
